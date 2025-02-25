@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Viih Estética - Beleza e Bem-estar</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300;400;500;600&family=Montserrat:wght@300;400;500;600&display=swap" rel="stylesheet">
+    
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav-container">
+            <div class="logo">
+                <img src="./assets/logo-removebg-preview.png" alt="Viih Estética" class="logo-img">
+            </div>
+            <div class="menu">
+                <ul class="nav-list">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#profile">Sobre</a></li>
+                    <li><a href="#services">Serviços</a></li>
+                    <li><a href="#infraestrutura">Infraestrutura</a></li>
+                    <li><a href="#contato">Contato</a></li>
+                </ul>
+            </div>
+            <div class="menu-mobile">
+                <div class="menu-toggle">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero" id="home">
+        <!-- Carrossel de background -->
+        <div id="heroCarousel" class="carousel slide carousel-fade hero-carousel" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active" data-bs-interval="7000">
+                    <div class="hero-bg-img" style="background-image: url('./assets/vi-emagrecimento.jpeg');"></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <div class="hero-bg-img" style="background-image: url('./assets/02-drenagem-linfatica.jpg');"></div>
+                </div>
+                <div class="carousel-item" data-bs-interval="7000">
+                    <div class="hero-bg-img" style="background-image: url('./assets/02-micro-agulhamento.jpg');"></div>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Overlay e conteúdo -->
+        <div class="hero-overlay"></div>
+        <div class="hero-container">
+            <div class="hero-content">
+                <h1>Beleza e bem-estar em harmonia</h1>
+                <p>Descubra o melhor da estética com tratamentos personalizados para realçar sua beleza natural</p>
+                <a href="https://wa.me/5511974106103" target="_blank" class="cta-button">Agende sua consulta</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Profile Section -->
+    <section class="profile" id="profile">
+        <div class="profile-container">
+            <div class="profile-image">
+                <img src="./assets/vivian.jpeg" alt="Profissional Viih Estética" class="profile-photo">
+                <div class="profile-decoration"></div>
+            </div>
+            <div class="profile-content">
+                <span class="section-subtitle">Sobre mim</span>
+                <h2 class="section-title">Experiência e dedicação em estética avançada</h2>
+                <div class="profile-text">
+                    <p>Com formação especializada e anos de experiência, dedico-me a proporcionar resultados excepcionais e uma experiência única em tratamentos estéticos.</p>
+                    <p>Minha missão é realçar sua beleza natural através de procedimentos seguros e eficazes, sempre utilizando tecnologias avançadas e produtos de alta qualidade.</p>
+                </div>
+                <div class="profile-highlights">
+                    <div class="highlight-item">
+                        <span class="highlight-number">09+</span>
+                        <span class="highlight-text">Anos de Experiência</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">700+</span>
+                        <span class="highlight-text">Clientes Satisfeitos</span>
+                    </div>
+                    <div class="highlight-item">
+                        <span class="highlight-number">20+</span>
+                        <span class="highlight-text">Procedimentos</span>
+                    </div>
+                </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section class="services" id="services">
+        <div class="services-container">
+            <div class="services-header">
+                <span class="section-subtitle">Nossos Serviços</span>
+                <h2 class="section-title">Tratamentos Personalizados para Você</h2>
+                <p class="services-description">Oferecemos uma variedade de tratamentos estéticos avançados para cuidar da sua beleza de forma integral.</p>
+            </div>
+            
+            <div class="services-grid">
+                <!-- Massagem -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/vi-massage.jpeg" alt="Ícone Massagem">
+                    </div>
+                    <h3>Massagem</h3>
+                    <p>Técnicas especializadas para relaxamento e bem-estar, proporcionando alívio do estresse e tensão muscular.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Limpeza de Pele -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/vi-limpeza-rosto.jpeg" alt="Ícone Limpeza de Pele">
+                    </div>
+                    <h3>Limpeza de Pele</h3>
+                    <p>Tratamento completo para renovação da pele, removendo impurezas e proporcionando uma pele mais saudável e radiante.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Manicure e Pedicure -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/vi-pés.jpeg" alt="Ícone Manicure e Pedicure">
+                    </div>
+                    <h3>Manicure e Pedicure</h3>
+                    <p>Cuidados completos para mãos e pés, incluindo tratamentos de cutículas, esmaltação e hidratação.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- EZBody -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/vi-emagrecimento.jpeg" alt="Ícone EZBody">
+                    </div>
+                    <h3>EZBody</h3>
+                    <p>Modelagem corporal avançada com impulsos elétricos, tecnologia inovadora para resultados eficientes e duradouros.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Depilação a Laser -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/depilacao-lasr.jpg" alt="Ícone Depilação a Laser">
+                    </div>
+                    <h3>Depilação a Laser</h3>
+                    <p>Tecnologia de ponta para remoção definitiva dos pelos, oferecendo conforto e resultados duradouros.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Drenagem linfática -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/02-drenagem-linfatica.jpg" alt="Ícone EZBody">
+                    </div>
+                    <h3>Drenagem Linfática</h3>
+                    <p>Elimine toxinas e reduza o inchaço com a drenagem linfática, uma técnica suave e eficaz que estimula o sistema linfático, promovendo bem-estar, relaxamento e uma aparência mais leve e saudável.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Microagulhamento -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/02-micro-agulhamento.jpg" alt="Ícone EZBody">
+                    </div>
+                    <h3>Microagulhamento</h3>
+                    <p>O procedimento estimula a produção natural de colágeno, suaviza marcas, linhas de expressão e melhora a textura da pele, proporcionando um aspecto jovem e renovado.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Peeling -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/02-peeling.jpeg" alt="Ícone EZBody">
+                    </div>
+                    <h3>Peeling</h3>
+                    <p>Renove sua pele com o peeling, um tratamento que remove células mortas, uniformiza o tom da pele e estimula a regeneração celular, deixando seu rosto mais luminoso, macio e rejuvenescido.</p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+
+                <!-- Terapia com Pedras Quentes -->
+                <div class="service-card">
+                    <div class="service-icon">
+                        <img src="./assets/02-pedras-quentes.jpg" alt="Ícone EZBody">
+                    </div>
+                    <h3>Terapia com Pedras Quentes</h3>
+                    <p>Relaxe profundamente com a terapia com pedras quentes, um tratamento que combina o calor das pedras vulcânicas com técnicas de massagem para aliviar tensões, melhorar a circulação e proporcionar uma sensação única de bem-estar e equilíbrio. </p>
+                    <a href="#contato" class="service-link">Saiba mais</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+     <!-- Infraestrutura Section -->
+     <section class="infraestrutura" id="infraestrutura">
+        <div class="infraestrutura-container">
+            <div class="infraestrutura-header">
+                <span class="section-subtitle">Nossa Estrutura</span>
+                <h2 class="section-title">Conforto e Qualidade para Seu Bem-estar</h2>
+                <p class="infraestrutura-description">Espaço planejado para oferecer o máximo de conforto e privacidade durante seus procedimentos.</p>
+            </div>
+
+            <div class="infraestrutura-grid">
+                <!-- Recepção -->
+                <div class="infra-card">
+                    <div class="infra-image">
+                        <img src="./assets/clinica-recepcao.jpeg" alt="Recepção">
+                    </div>
+                    <div class="infra-content">
+                        <h3>Recepção Acolhedora</h3>
+                        <p>Nossa recepção foi pensada para seu conforto, com ambiente climatizado, café e água à disposição. Wi-Fi gratuito para seu entretenimento durante a espera.</p>
+                    </div>
+                </div>
+
+                <!-- Espaço Manicure e Pedicure -->
+                <div class="infra-card">
+                    <div class="infra-image">
+                        <img src="./assets/clinica-manicure.jpeg" alt="Espaço Manicure e Pedicure">
+                    </div>
+                    <div class="infra-content">
+                        <h3>Espaço Manicure e Pedicure</h3>
+                        <p>Área exclusiva para cuidados com mãos e pés, equipada com mobiliário ergonômico e os melhores produtos do mercado.</p>
+                    </div>
+                </div>
+
+                <!-- Sala de Procedimentos -->
+                <div class="infra-card">
+                    <div class="infra-image">
+                        <img src="./assets/clinica-quarto.JPG" alt="Sala de Procedimentos">
+                    </div>
+                    <div class="infra-content">
+                        <h3>Sala de Procedimentos</h3>
+                        <p>Ambiente versátil e privativo para massagens, tratamentos corporais e faciais. Equipada com tecnologia EZBody e aparelho de depilação a laser.</p>
+                    </div>
+                </div>
+
+                <!-- Estacionamento -->
+                <div class="infra-card">
+                    <div class="infra-image">
+                        <img src="./assets/clinica-estacionamento.png" alt="Estacionamento">
+                    </div>
+                    <div class="infra-content">
+                        <h3>Estacionamento</h3>
+                        <p>Vaga rotativa exclusiva para clientes, garantindo praticidade e segurança durante seu atendimento.</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Nossos Equipamentos -->
+            <div class="equipamentos">
+                <h3>Tecnologia para Seus Tratamentos</h3>
+                <div class="equipamentos-list">
+                    <div class="equipamento-item">
+                        
+                        <h4>Laser para Depilação</h4>
+                        <p>Tecnologia avançada para remoção dos pelos com conforto e eficiência.</p>
+                    </div>
+
+                    <div class="equipamento-item">
+                        
+                        <h4>EZBody</h4>
+                        <p>Equipamento de última geração para modelagem corporal com impulsos elétricos.</p>
+                    </div>
+
+                    <div class="equipamento-item">
+                        
+                        <h4>Produtos de Qualidade</h4>
+                        <p>Utilizamos apenas produtos certificados e de marcas reconhecidas para garantir segurança e resultados eficazes em todos os procedimentos.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Contact Section -->
+    <section class="contact-section" id="contato">
+        <div class="contact-container">
+            <div class="section-header">
+                <span class="section-subtitle">Contato</span>
+                <h2 class="section-title">Entre em Contato</h2>
+            </div>
+            
+            <div class="contact-wrapper">
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            
+                            <h4>Endereço</h4>
+                            <p>Estrada do M'Boi Mirim, 1537<br>
+                               Sala 4 - Piraporinha - São Paulo, SP<br>
+                               04905-021<br>
+                               Próx ao Banco do Brasil<br>
+                               </p>
+                        </div>
+
+                        <div class="contact-item">
+                            
+                            <h4>Telefone</h4>
+                            <p>(11) 97410-6103</p>
+                        </div>
+
+                        <div class="contact-item">
+                            
+                            <h4>Email</h4>
+                            <p>viihesteticaa@gmail.com</p>
+                        </div>
+
+                        <div class="contact-item">
+                            
+                            <h4>Horário de Funcionamento</h4>
+                            <p>Segunda a Sexta: 9h às 19h<br>
+                               Sábado: 9h às 14h</p>
+                        </div>
+                    </div>                   
+                
+                </div>
+
+                
+                    <form id="mc-embedded-subscribe-form" action="https://gmail.us3.list-manage.com/subscribe/post"
+                        method="post" name="mc-embedded-subscribe-form" class="validate" target="_blank">
+                        <input type="hidden" name="u" value="9551c44a43afc4575ec29ff85">
+                        <input type="hidden" name="id" value="2c7a66953a">
+
+                        <div class="form-group">
+                            <input type="text" name="FNAME" id="mce-FNAME" placeholder="Nome completo" required
+                                minlength="2" maxlength="50">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="email" name="EMAIL" id="mce-EMAIL" placeholder="E-mail" required
+                                pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$">
+                        </div>
+
+                        <div class="form-group">
+                            <input type="tel" name="PHONE" id="mce-PHONE" placeholder="Telefone" required
+                                pattern="[0-9]{10,11}" title="Insira um telefone válido (10-11 dígitos)">
+                        </div>
+
+                        <button type="submit" name="subscribe" id="mc-embedded-subscribe" class="btn">
+                            Enviar mensagem
+                        </button>
+
+                        <!-- Campos ocultos do Mailchimp -->
+                        <div style="position: absolute; left: -5000px;" aria-hidden="true">
+                            <input type="text" name="b_9551c44a43afc4575ec29ff85_2c7a66953a" tabindex="-1" value="">
+                        </div>
+                    </form>
+
+                    <!-- Mapa será adicionado aqui -->
+                    <div class="contact-map">
+                        <iframe 
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3655.5561463444387!2d-46.7754363!3d-23.6751299!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce4ff01f68b2c3%3A0x2a5f50c1c7df6593!2sEstrada%20do%20M&#39;Boi%20Mirim%2C%201537%20-%20Jardim%20Angela%2C%20S%C3%A3o%20Paulo%20-%20SP!5e0!3m2!1spt-BR!2sbr!4v1708719844955!5m2!1spt-BR!2sbr"
+                            width="100%" 
+                            height="300" 
+                            style="border:0;" 
+                            allowfullscreen="" 
+                            loading="lazy" 
+                            referrerpolicy="no-referrer-when-downgrade">
+                        </iframe>
+                    </div>
+                
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-logo">
+                    <h3>Viih Estética</h3>
+                    <p>by Vivian Arditi</p>
+                </div>
+                <div class="footer-links">
+                    <div class="footer-column">
+                        <h4>Menu</h4>
+                        <a href="#servicos">Serviços</a> 
+                        <a href="#contato">Contato</a>
+                    </div>
+                    <div class="footer-column">
+                        <h4>Redes Sociais</h4>
+                        <a href="https://www.instagram.com/viih.estetica" target="_blank">Instagram</a>
+                        
+                        <a href="https://wa.me/5511974106103" target="_blank">WhatsApp</a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Viih Estética. Todos os direitos reservados.</p>
+                <p class="developer-credits">Desenvolvido por <a
+                        href="mailto:amanda95151@gmail.com">Amanda Machado </a></p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+    <script src="script.js"></script>
+</body>
+</html>
