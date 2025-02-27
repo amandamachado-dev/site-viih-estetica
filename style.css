@@ -887,6 +887,16 @@ body, html {
 .contact-link:hover .contact-action {
     text-decoration: underline;
 }
+.appointment-note {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 4px 10px;
+    background-color: #F5F0EB;
+    border-left: 3px solid #B5A187;
+    font-size: 14px;
+    color: #666666;
+    font-style: italic;
+}
 
 /* Responsividade */
 @media (max-width: 1024px) {
