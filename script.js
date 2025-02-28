@@ -20,6 +20,31 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 
+// Script para navbar mobile
+document.addEventListener('DOMContentLoaded', function() {
+    const header = document.querySelector('.header');
+    
+    function handleMobileScroll() {
+        // Aplicar apenas em dispositivos móveis
+        if (window.innerWidth <= 768) {
+            if (window.scrollY > 20) {
+                header.classList.add('mobile-scrolled');
+            } else {
+                header.classList.remove('mobile-scrolled');
+            }
+        }
+    }
+    
+    // Verificar na carga inicial
+    handleMobileScroll();
+    
+    // Verificar ao rolar
+    window.addEventListener('scroll', handleMobileScroll);
+    
+    // Verificar ao redimensionar
+    window.addEventListener('resize', handleMobileScroll);
+});
+
 
 // Função para exibir o modal de confirmação
 document.addEventListener('DOMContentLoaded', function() {
