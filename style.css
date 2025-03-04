@@ -296,6 +296,26 @@ html {
         padding: 12px 30px;
         font-size: 15px;
     }
+
+    .hero {
+        position: relative;
+        z-index: 1;
+      }
+      
+      /* Linha fina na base do hero */
+      .hero::after {
+        content: '';
+        position: absolute;
+        bottom: 0;
+        left: 10%; /* Começa a 10% da esquerda para ser mais elegante */
+        width: 80%; /* Ocupa 80% da largura para não ir até as bordas */
+        height: 3px; /* Altura de apenas 1px para ser bem fina */
+        background: linear-gradient(to right,
+                    rgba(181, 161, 135, 0),   /* Começa transparente */
+                    rgba(181, 161, 135, 0.5), /* Tom dourado no meio */
+                    rgba(181, 161, 135, 0));  /* Termina transparente */
+        z-index: 10;
+      }
 }
 
 /* Profile Section */
